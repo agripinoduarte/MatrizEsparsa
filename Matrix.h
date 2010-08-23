@@ -130,29 +130,8 @@ class Matrix
 			
 		}
 		
-		void insert(int value, int column, int row)
-		{
-			Node* newNode = new Node();
-			newNode->setValue(value);
-			newNode->setColumn(column);
-			newNode->setRow(row);
-			Node* tempHead = head;
-
-			for(int i = 0; i <= row; i++)
-			{
-				tempHead = tempHead->getDown();
-			}
-			
-			while(tempHead ->next != head)
-			{
-				tempHead = tempHead->getNext();
-			}
-		}
-		
-		void print()
-		{
-			
-		}
+		void insert(int,int,int);
+		void print();
 
 
 };
